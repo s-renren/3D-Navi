@@ -1,4 +1,5 @@
 import styles from './index.module.css';
+import SightseeingMap from './sightseeingMap/index.page';
 
 const Home = () => {
   return (
@@ -11,7 +12,7 @@ const Home = () => {
     //   )}
     // />
     <div className={styles.container}>
-      <p>Hello</p>
+      <SightseeingMap />
     </div>
   );
 };
