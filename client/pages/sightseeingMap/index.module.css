@@ -1,10 +1,21 @@
-.buttonWrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  height: 20rem;
-}
-
 .mapContainer {
   text-align: center;
+}
+
+.buttonWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  justify-content: space-between;
+  width: 80%;
+  height: auto;
+  margin: 4% 10%;
+}
+
+.selectButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  height: 40px;
 }

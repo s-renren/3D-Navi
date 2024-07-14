@@ -26,9 +26,9 @@ const SightseeingMap = () => {
       <h1>観光地マップ</h1>
       <div className={styles.mapContainer}>
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4094.246992558676!2d135.4966105087244!3d34.702594556611075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sja!2sjp!4v1720882526114!5m2!1sja!2sjp"
-          width="800"
-          height="500"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4619.8621358848995!2d135.7281628044022!3d35.038337733934746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6001a820c0eb46bd%3A0xee4272b1c22645f!2z6YeR6Zaj5a-6!5e0!3m2!1sja!2sjp!4v1720931663080!5m2!1sja!2sjp"
+          width="80%"
+          height="600px"
           style={{ border: 0 }}
           allowFullScreen
           loading="lazy"
@@ -37,25 +37,28 @@ const SightseeingMap = () => {
       </div>
       <div className={styles.buttonWrapper}>
         <button
+          className={styles.selectButton}
           onClick={() => handleSelectPlace('金閣寺')}
           style={{
-            backgroundColor: selectedPlace.includes('金閣寺') ? 'red' : 'white',
+            backgroundColor: selectedPlace.includes('金閣寺') ? '#3CB371' : 'white',
           }}
         >
           金閣寺
         </button>
         <button
+          className={styles.selectButton}
           onClick={() => handleSelectPlace('清水寺')}
           style={{
-            backgroundColor: selectedPlace.includes('清水寺') ? 'red' : 'white',
+            backgroundColor: selectedPlace.includes('清水寺') ? '#3CB371' : 'white',
           }}
         >
           清水寺
         </button>
         <button
+          className={styles.selectButton}
           onClick={() => handleSelectPlace('伏見稲荷大社')}
           style={{
-            backgroundColor: selectedPlace.includes('伏見稲荷大社') ? 'red' : 'white',
+            backgroundColor: selectedPlace.includes('伏見稲荷大社') ? '#3CB371' : 'white',
           }}
         >
           伏見稲荷大社
